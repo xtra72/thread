@@ -1,0 +1,31 @@
+== Exam-03. Thread pool을 이용해 RunnableCounter를 실행해 보자.
+
+1. ExecutorService를 이용해 thread pool을 생성한다. 이때, pool의 크기는 1로 한다.
++
+[source,java]
+----
+include::../../src/main/java/com/nhnacademy/runnable_interface_implement/Exam03.java[lines=8,indent=0]
+----
++
+2. pool에 RunnableCounter instance를 생성해 넘기고 실행하도록 한다.
++
+[source,java]
+----
+include::../../src/main/java/com/nhnacademy/runnable_interface_implement/Exam03.java[lines=9..10,indent=0]
+----
+3. 실행 결과는 아래와 같다.
++
+[source,console]
+----
+counter1 : 1
+counter1 : 2
+counter1 : 3
+counter1 : 4
+counter1 : 5
+counter2 : 1
+counter2 : 2
+counter2 : 3
+counter2 : 4
+counter2 : 5
+----
++

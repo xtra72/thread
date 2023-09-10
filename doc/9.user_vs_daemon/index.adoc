@@ -1,0 +1,5 @@
+== User Thread vs Daemon Thread
+
+Java에는 user thread와 daemon thread라는 두 가지 유형의 스레드가 있다. User thread는 항상 전경에서 실행되는 우선순위가 높은 스레드입니다. Daemon thread는 항상 백그라운드에서 실행되는 우선순위가 낮은 스레드입니다. User thread는 daemon thread가 일부 지원 작업을 수행하는 데 사용되는 특정 작업을 수행하도록 설계되었습니다. **이 게시물에서는 user thread와 daemon thread** 의 차이점에 대해 논의하고 서로 무엇이 다른지 살펴보겠습니다.
+
+{empty} + 
