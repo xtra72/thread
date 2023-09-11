@@ -6,7 +6,13 @@ import java.util.concurrent.Executors;
 public class Exam02 {
 
     public static void main(String[] args) {
-        String[] urls = { "https://github.com/xtra72/thread/blob/main/doc/8.thread_pool/index.adoc"
+        String[] urls = { "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.JMwL9-kHTKKJ6YhS-Xykpg",
+                "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.CH51Oh3xTaSSmHwhVhYrgQ",
+                "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.6xuIQS1YSESJmigo2ECzQw",
+                "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.xzEwVuqrTVm23HKK_vCm0Q",
+                "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.X_otcNhCRKWruinRW2gyFA",
+                "https://nhnacademy.dooray.com/share/drive-files/ocfkrcbb5vui.WXsaSz-ARo2DryGsEK0S_w"
+
         };
         ExecutorService executor = Executors.newFixedThreadPool(3);
 

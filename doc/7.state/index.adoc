@@ -211,6 +211,8 @@ a|
 
 link:quiz-01.adoc[Quiz-01. sleep()를 이용해 일정 시간 간격으로 tick을 출력하는 ticker를 만들어라]
 
+{empty} +
+
 ==== wait() vs sleep()
 
 * wait() 및 sleep()은 모두 일정 기간 동안 thread의 실행을 일시 중지하는 데 사용된다.
@@ -231,9 +233,7 @@ link:quiz-01.adoc[Quiz-01. sleep()를 이용해 일정 시간 간격으로 tick�
 join()는 3가지로 overloading 되어 있다.
 
 * join() : 호출한 thread가 종료될 때까지 기다린다.
-
 * join(long millis) : 호출한 thread를 지정된 시간 동안만 기다린다. 대기 시간은 밀리초 단위로 제어한다.
-
 * join(long mills, int nanos) : 호출한 thread를 지정된 시간 동안 기다린다. 대기 시간은 나노초 단위로 제어한다.
 
 link:quiz-02.adoc[Quiz-02. Thread를 실행시키고, 모든 thread가 종료되면 프로그램이 종료되도록 하라]

@@ -1,4 +1,4 @@
-== Quiz-01. ThreadCounter class에 중지를 위한 field와 method를 추가하여 동작을 확인하라.
+== Quiz-01. RunnableCounter class에 중지를 위한 field와 method를 추가하여 동작을 확인하라.
 
 {empty} + 
 
