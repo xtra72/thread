@@ -1,43 +1,47 @@
 == Exam-03. Thread intance를 생성하여 BLOCKED 상태를 확인해 보자.
 
-1. 공유 자원을 이용하는 SharedThreadCounter class를 정의한다.
+1. 공유 자원 SharedCount class를 정의한다.
 +
 --
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/SharedThreadCounter.java[]
+include::../../src/main/java/com/nhnacademy/state/SharedCount.java[]
 ----
-* 공유 자원인 count 접근시 synchronized를 이용해 critical section을 설정하고 중복 처리를 방지한다.
+* 공유 자원인 count를 변경할 때는 하나의 thread만 접근 가능하도록 처리한다.
 --
 +
 2. 동시 실행을 위해 Thread instance 2개를 생성한다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=7..8,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=6..7,indent=0]
 ----
 +
 3. 생성된 object를 실행시킨다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=10..11,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=9..10,indent=0]
 ----
 + 
 4. object의 상태를 출력한다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=12..13,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam03.java[lines=12..24,indent=0]
 ---- 
 +
 5. 결과를 확인한다.
 +
 [source,console]
 ----
-RUNNABLE
-counter : 1
-counter : 2
+T1 : RUNNABLE, T2 : RUNNABLE
+T1 : TIMED_WAITING, T2 : BLOCKED
+T1 : TIMED_WAITING, T2 : TIMED_WAITING
+T1 : TIMED_WAITING, T2 : RUNNABLE
+T1 : TIMED_WAITING, T2 : TIMED_WAITING
+T1 : TIMED_WAITING, T2 : BLOCKED
+T1 : TIMED_WAITING, T2 : TIMED_WAITING
 ...
 ----
 +

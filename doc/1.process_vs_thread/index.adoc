@@ -22,6 +22,7 @@ image::image/process_vs_thread2.svg[title="Process vs Thread", align="center",wi
 
 image::image/thread.png[title="Tread", align="center"]
 
+{empty} +
 
 link:exam-01.adoc[Exam-01. Linux 명령어를 이용해 시스템에서 동작 중인 process와 thread에 알아보자.]
 

@@ -5,23 +5,23 @@
 --
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=7,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=5,indent=0]
 ----
-* ThreadCounter는 앞서 정의한 extended Thread class 이다.
+* 앞서 정의한 Runnablecounter를 이용한다.
 --
 +
 2. 생성된 object를 실행시킨다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=9,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=7,indent=0]
 ----
 +
 3. object의 상태를 출력한다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=10,indent=0]
+include::../../src/main/java/com/nhnacademy/state/Exam02.java[lines=8,indent=0]
 ----
 +
 4. 결과를 확인한다.

@@ -4,7 +4,7 @@
 
 *요구 사항*
 
-* ThreadCounter instance를 2개 이상 생성한다.
+* RunnableCounter instance를 2개 이상 생성한다.
 * Thread가 종료될때 마다 종료되었음을 출력한다.
 * 모든 thread가 종료되면, 프로그램 종료를 출력하고 끝낸다.
 
