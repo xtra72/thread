@@ -14,8 +14,8 @@ public class Exam03 {
         System.out.println("T1 : " + state1 + ", T2 : " + state2);
 
         while (counter1.getThread().isAlive() || counter2.getThread().isAlive()) {
-            if ((counter1.getThread().getState() != state1) ||
-                    (counter2.getThread().getState() != state2)) {
+            if ((counter1.getThread().getState() != state1)
+                    || (counter2.getThread().getState() != state2)) {
                 state1 = counter1.getThread().getState();
                 state2 = counter2.getThread().getState();
                 System.out.println("T1 : " + state1 + ", T2 : " + state2);
