@@ -1,4 +1,4 @@
-== Quiz-01. Runnable interface를 이용해 CounterRunnable class를 구현해 보자.
+== Quiz-01. Runnable interface를 이용해 RunnableCounter class를 구현해 보자.
 
 {empty} +
 

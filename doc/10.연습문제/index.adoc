@@ -45,7 +45,7 @@ public class Store {
 
 {empty} + 
 
-=== Exam-02. 매장에 물건을 납품하는 생산자(Seller)을 정의하라.
+=== Exam-02. 매장에 물건을 납품하는 생산자(Producer)을 정의하라.
 * 생산자는 매장에 물건이 비워지 않도록 채워둔다.
 * 물건은 1~10초 간격으로 채운다.
 * Thread내에서 난수 생성을 위해서는 ThreadLocalRandom.current().nextInt()를 사용하면 된다.
@@ -54,11 +54,11 @@ public class Store {
 ----
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Seller extends Thread {
-    Store store;
+public class Producer implements Runnable {
+    ...
 
-    public Seller(Store store) {
-        this.store = store;
+    public Producer(Store store) {
+        ...
     }
 
     @Override
@@ -70,7 +70,7 @@ public class Seller extends Thread {
 
 {empty} + 
 
-=== Exam-03. 매장에 물건을 구매하는 소비자(Buyer)을 정의하라.
+=== Exam-03. 매장에 물건을 구매하는 소비자(Consumer)을 정의하라.
 * 소비자는 매장에 입장 후 물건을 구매할 수 있다.
 * 매장에는 입장 인원 제한이 있으므로, 인원 초과시 기다린다.
 * 매장에 입장하면 물건을 구매하고, 퇴장한다.
@@ -80,12 +80,12 @@ public class Seller extends Thread {
 ----
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Buyer extends Thread {
+public class Consumer implements Runnable {
     Store store;
+    ...
 
-    public Buyer(String name, Store store) {
-        super(name);
-        this.store = store;
+    public Consumer(String name, Store store) {
+        ...
     }
 
     @Override
