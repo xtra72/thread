@@ -6,6 +6,7 @@ public class Exam03 {
         SharedCounter counter1 = new SharedCounter("counter1", 5, sharedCount);
         SharedCounter counter2 = new SharedCounter("counter2", 5, sharedCount);
 
+
         counter1.start();
         counter2.start();
 
