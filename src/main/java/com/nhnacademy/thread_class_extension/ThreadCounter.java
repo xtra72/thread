@@ -22,4 +22,10 @@ public class ThreadCounter extends Thread {
             }
         }
     }
+
+    public static void main(String[] args) {
+        ThreadCounter counter = new ThreadCounter("counter", 50);
+
+        counter.start();
+    }
 }

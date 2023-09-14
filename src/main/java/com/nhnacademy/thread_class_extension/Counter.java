@@ -22,4 +22,10 @@ public class Counter {
             }
         }
     }
+
+    public static void main(String[] args) {
+        Counter counter = new Counter("counter", 50);
+
+        counter.run();
+    }
 }
