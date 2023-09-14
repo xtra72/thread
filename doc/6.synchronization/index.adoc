@@ -198,7 +198,14 @@ link:exam-05.adoc[Exam-05. Baeldung: wait and notify() method in java]
 * 효율성 감소
   * Java 동기화된 함수는 매우 느리게 실행되며 성능이 저하될 수 있으므로 꼭 필요하지 않을 때 함수를 동기화하고 코드의 중요한 섹션에 대해서만 블록을 동기화해야 한다.
 
+{empty} +
 
 ==== Semaphore
 
 link:https://www.baeldung.com/java-semaphore[Semaphores in Java]
+
+{empty} +
+
+=== Mutex
+
+link:https://www.baeldung.com/java-mutex[Using a Mutex Object in Java]

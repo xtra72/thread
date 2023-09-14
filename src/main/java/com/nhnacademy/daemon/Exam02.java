@@ -3,12 +3,12 @@ package com.nhnacademy.daemon;
 public class Exam02 {
     public static void main(String[] args) throws InterruptedException {
 
-        Worker2 worker1 = new Worker2("worker1");
+        Worker worker = new Worker("worker1", 100);
 
-        worker1.start();
+        worker.start();
 
         Thread.sleep(5000);
-        worker1.stop();
+        worker.stop();
 
         System.out.println("Main Thread terminated");
     }
