@@ -2,18 +2,31 @@
 
 1. ExecutorService를 이용해 thread pool을 생성한다. 이때, pool의 크기는 1로 한다.
 +
-[source,java]
+[source,java,indent=0]
 ----
-include::../../src/main/java/com/nhnacademy/runnable_interface_implement/Exam03.java[lines=8,indent=0]
+        ExecutorService pool = Executors.newFixedThreadPool(1);
 ----
 +
 2. pool에 RunnableCounter instance를 생성해 넘기고 실행하도록 한다.
 +
-[source,java]
+[source,java,indent=0]
 ----
-include::../../src/main/java/com/nhnacademy/runnable_interface_implement/Exam03.java[lines=9..10,indent=0]
+        pool.execute(new RunnableCounter("counter1", 5));
+        pool.execute(new RunnableCounter("counter2", 5));
 ----
-3. 실행 결과는 아래와 같다.
+3. pool을 종료하도록 명령을 내리고, 종료되길 기다린다.
++
+[source,console,indent=0]
+----
+        pool.shutdown();
+        System.out.println("Shutdown called");
+        while (!pool.awaitTermination(2, TimeUnit.SECONDS)) {
+            System.out.println("Not yet finished");
+        }
+        System.out.println("All service finished");
+----
++
+4. 실행 결과는 아래와 같다.
 +
 [source,console]
 ----

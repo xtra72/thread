@@ -1,3 +1,6 @@
+:includedir: ../../src/main/java/com/nhnacademy/synchronization/exam01
+:sourcedir: ../../src/main/java/com/nhnacademy/synchronization/exam01
+
 == Exam-01. 공유 count를 갖는 SharedCounter class를 만들어 race condition 문제에 대해 확인해 보자.
 
 {empty} +
@@ -6,7 +9,7 @@
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCount.java[lines=3..17,indent=0]
+include::{includedir}/SharedCount.java[lines=3..17,indent=0]
 ----
 +
 
@@ -15,23 +18,23 @@ include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCount.j
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter.java[lines=5..6,indent=0]
+include::{includedir}/SharedCounter.java[lines=5..6,indent=0]
 ----
 +
 3. SharedCounter의 constructor는 이름, 최대 증가치, SharedCount를 받는다.
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter.java[lines=8,indent=0]
+include::{includedir}/SharedCounter.java[lines=8,indent=0]
 ...
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter.java[lines=11,indent=0]
+include::{includedir}/SharedCounter.java[lines=11,indent=0]
 ----
 +
 4. sharedCount가 maxCount에 도달할때까지 sleep()없이 증가 시킨다. (출력도 생략한다.)
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter.java[lines=17..20,indent=0]
+include::{includedir}/SharedCounter.java[lines=17..20,indent=0]
 ----
 +
 
@@ -39,7 +42,7 @@ include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/Exam01.java[lines=5..7,indent=0]
+include::{includedir}/Exam01.java[lines=5..7,indent=0]
 ----
 +
 
@@ -47,7 +50,7 @@ include::../../src/main/java/com/nhnacademy/synchronization/exam01/Exam01.java[l
 +
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/Exam01.java[lines=19,indent=0]
+include::{includedir}/Exam01.java[lines=19,indent=0]
 ----
 +
 
@@ -67,23 +70,24 @@ sharedCount : 15429
 
 === Source Code
 
+
 *SharedCount class*
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCount.java[]
+include::{sourcedir}/SharedCount.java[]
 ----
 
 
 *SharedCounter class*
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/SharedCounter.java[]
+include::{sourcedir}/SharedCounter.java[]
 ----
 
 
 *Exam1 class*
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/synchronization/exam01/Exam01.java[]
+include::{sourcedir}/Exam01.java[]
 ----
 

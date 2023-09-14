@@ -1,3 +1,5 @@
+:sourcedir: ../../src/main/java/com/nhnacademy/daemon
+
 == User Thread vs Daemon Thread
 
 * Java에서의 스레드는 일반 스레드(User Thread)와 데몬 스레드(Daemon Thread)로 나뉜다.
@@ -19,7 +21,7 @@
 
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/daemon/Exam01.java[]
+include::{sourcedir}/Exam01.java[]
 ---- 
 
 
@@ -32,7 +34,7 @@ include::../../src/main/java/com/nhnacademy/daemon/Exam01.java[]
 
 [source,java]
 ----
-include::../../src/main/java/com/nhnacademy/daemon/Exam02.java[]
+include::{sourcedir}/Exam02.java[]
 ----
 
 {empty} + 

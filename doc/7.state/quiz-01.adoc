@@ -1,6 +1,8 @@
 == Quiz-01. sleep()를 이용해 일정 시간 간격으로 tick을 출력하는 ticker를 만들어라.
 
-*요구 사항*
+{empty} +
+
+=== 요구 사항
 
 * 시간간격은 실행시 인수를 받는다.
 ** 기본은 milliseconds 단위로 받고
@@ -11,6 +13,6 @@
 
 {empty} +
 
-*참고*
+=== 참고
 
 * sleep()을 사용할 경우, InterruptedException에 대한 처리가 요구된다.

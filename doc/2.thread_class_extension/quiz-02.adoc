@@ -3,7 +3,7 @@
 
 {empty} +
 
-**요구 사항**
+=== 요구 사항
 
 * Thread로 동작할 수 있도록 정의하라.
 ** Thread class를 이용한다.
@@ -17,10 +17,13 @@
 
 {empty} +
 
-**예상 결과**
+=== 예상 결과
 
 * name을 threadCounter로 준다.
 * maxCount를 10으로 준다.
++
+--
+====
 [source,console]
 ----
 threadCounter : 1
@@ -29,8 +32,13 @@ threadCounter : 3
 ...
 threadCounter : 10
 ----
+====
+--
++
 
-**참고**
+{empty} +
+
+=== 참고
 
 * Thread class에서 실행 코드는 run()에 정의되어야 한다.
 * Thread class에서 run()은 거의 아무런 작업이 수행되지 않도록 정의되어 있으므로, 재정의가 필요하다.
