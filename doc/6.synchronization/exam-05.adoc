@@ -2,7 +2,11 @@
 
 == Exam-05. Baeldung: wait and notify() method in java
 
-1. ender는 문자열을 data를 통해 전달하고, receiver는 data를 통해 문자열을 받는다.
+{empty} +
+
+=== 과정
+
+1. Sender는 문자열을 data를 통해 전달하고, receiver는 data를 통해 문자열을 받는다.
 +
 [source,java]
 ----

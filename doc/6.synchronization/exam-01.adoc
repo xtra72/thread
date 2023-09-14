@@ -5,6 +5,8 @@
 
 {empty} +
 
+=== 과정
+
 1. 공유 count를 위한 SharedCount class를 정의한다.
 +
 [source,java]
@@ -57,6 +59,8 @@ include::{includedir}/Exam01.java[lines=19,indent=0]
 {empty} + 
 
 === 실행 결과
+
+====
 [source,console]
 ----
 counter1: started
@@ -65,27 +69,27 @@ counter1: terminated
 counter2: terminated
 sharedCount : 15429
 ----
+====
 
 {empty} + 
 
 === Source Code
 
-
-*SharedCount class*
+==== class SharedCount
 [source,java]
 ----
 include::{sourcedir}/SharedCount.java[]
 ----
 
 
-*SharedCounter class*
+==== class SharedCounter
 [source,java]
 ----
 include::{sourcedir}/SharedCounter.java[]
 ----
 
 
-*Exam1 class*
+==== class Exam1
 [source,java]
 ----
 include::{sourcedir}/Exam01.java[]

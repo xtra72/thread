@@ -1,13 +1,11 @@
 package com.nhnacademy.synchronization.exam03;
 
 public class SharedCounter extends Thread {
-    SharedCount sharedCount;
     int count;
     int maxCount;
 
-    public SharedCounter(String name, int maxCount, SharedCount sharedCount) {
+    public SharedCounter(String name, int maxCount) {
         setName(name);
-        this.sharedCount = sharedCount;
         this.maxCount = maxCount;
         count = 0;
     }
@@ -16,7 +14,7 @@ public class SharedCounter extends Thread {
     public void run() {
         while (count < maxCount) {
             count++;
-            sharedCount.increment();
+            SharedCount.increment();
         }
     }
 }

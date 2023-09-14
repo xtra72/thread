@@ -1,17 +1,17 @@
 package com.nhnacademy.daemon;
 
 public class Worker extends RunnableCounter {
-    RunnableCounter worker;
+    RunnableCounter runnableCounter;
 
     public Worker(String name, int maxCount) {
         super(name, maxCount);
-        worker = new RunnableCounter("internal workder", maxCount);
-        worker.setDaemon(true);
+        runnableCounter = new RunnableCounter("internal workder", maxCount);
+        runnableCounter.setDaemon(true);
     }
 
     @Override
     public void run() {
-        worker.start();
+        runnableCounter.start();
 
         super.run();
     }

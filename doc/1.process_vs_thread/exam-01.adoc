@@ -1,8 +1,11 @@
 == Exam-01. Linux 명령어를 이용해 시스템에서 동작 중인 process와 thread에 알아보자.
 
+{empty} +
+
 1. ps명령을 이용해 동작 중인 process를 확인한다.
 +
 --
+====
 [source,console]
 ----
 ~$ ps -ef 
@@ -26,11 +29,14 @@ xtra         411     406  0 17:39 ?        00:00:00 (sd-pam)
 xtra         416     347  0 17:39 pts/1    00:00:00 -bash
 xtra         477     346  0 17:39 pts/0    00:00:00 ps -ef
 ----
+====
+* PID: process 식별자
 --
 +
 2. ps명령을 이용해 동작 중인 thread를 확인한다.
 +
 --
+====
 [source,console]
 ----
 ~$ ps -eLf
@@ -67,6 +73,7 @@ xtra         346     345     346  0    1 17:39 pts/0    00:00:00 -bash
 xtra         487     346     487  0    1 17:39 pts/0    00:00:00 ps -eLf
 ~
 ----
+====
 * PID: process 식별자
 * LWP: process내에서 thread 식별자
 * NLWP: process에서 생성한 thread 개수

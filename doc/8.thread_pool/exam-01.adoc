@@ -3,6 +3,8 @@
 
 {empty} + 
 
+=== 과정
+
 1. Runnable interface를 이용해 시작하고 2초 후 종료하는 Worker class를 정의하자.
 ** Constructor에서는 이름을 받는다.
 +
@@ -41,7 +43,7 @@ include::{sourcedir}/Exam01.java[lines=16..18,indent=0]
 
 === Source Code
 
-==== Worker.java
+==== class Worker
 
 [source,java]
 ----
@@ -50,7 +52,7 @@ include::{sourcedir}/Worker.java[]
 
 {empty} + 
 
-==== Exam01.java
+==== class Exam01
 
 [source,java]
 ----

@@ -6,7 +6,7 @@ Thread class를 이용하는 것과 Runnable 인터페이스를 이용하는 것
 
 두 가지 방안에서의 가장 큰 차이점은 당연히 class의 상속과 인터페이스의 구현이라 할 수 있다.
 
-[cols="1,1"]
+[frame=ends, cols="1,1"]
 |===
 ^s|Class 확장
 ^s|Interface 구현

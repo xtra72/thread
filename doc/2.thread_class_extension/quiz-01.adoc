@@ -2,7 +2,7 @@
 
 {empty} +
 
-**요구 사항**
+=== 요구 사항
 
 * Counter class를 정의하라.
 ** 시작 후 1초마다 횟수를 1씩 증가 시킨다.
@@ -16,7 +16,7 @@
 
 {empty} +
 
-**예상 결과**
+=== 예상 결과
 
 * name을 counter으로 준다.
 * maxCount를 10으로 준다.
@@ -34,7 +34,10 @@ counter : 10
 ====
 --
 +
-**참고**
+
+{empty} + 
+
+=== 참고
 
 * 시간 간격 주기footnote:[https://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html[Pausing Execution with Sleep]]
 ** Thread class에서 지원하는 sleep() 이용할 수 있다.

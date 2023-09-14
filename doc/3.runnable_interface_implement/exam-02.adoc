@@ -1,5 +1,9 @@
 == Exam-02. RunnableCounter에 Thread field를 추가하고, 이를 이용해 실행해 보자
 
+{empty} +
+
+=== 과정
+
 1. RunnableCounter class를 확장하여 SelfRunnableCounter를 만든다.
 +
 --
@@ -56,7 +60,7 @@ public class SelfRunnableCounter implements Runnable {
 
 === Source Code
 
-==== Exam02.java
+==== class Exam02
 [source,java]
 ----
 public class Exam02 {
@@ -68,7 +72,7 @@ public class Exam02 {
 }
 ----
 
-==== SelfRunnableCounter.java
+==== class SelfRunnableCounter
 
 [source,java]
 ----

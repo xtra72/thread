@@ -2,6 +2,10 @@
 
 == Exam-03. Thread intance를 생성하여 BLOCKED 상태를 확인해 보자.
 
+{empty} +
+
+=== 과정
+
 1. 공유 자원 SharedCount class를 정의한다.
 +
 --
@@ -35,6 +39,7 @@ include::{sourcedir}/Exam03.java[lines=12..24,indent=0]
 +
 5. 결과를 확인한다.
 +
+====
 [source,console]
 ----
 T1 : RUNNABLE, T2 : RUNNABLE
@@ -46,6 +51,7 @@ T1 : TIMED_WAITING, T2 : BLOCKED
 T1 : TIMED_WAITING, T2 : TIMED_WAITING
 ...
 ----
+====
 +
 
 {empty} + 

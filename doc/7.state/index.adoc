@@ -4,12 +4,12 @@
 
 Thread는 아래와 같은 생명 주기를 가질 수 있다.
 
-image::https://www.baeldung.com/wp-content/uploads/2018/02/Life_cycle_of_a_Thread_in_Java.jpg[title="Life cycle of a thread in java"]
+image::image/thread_state.png[title="Life cycle of a thread in java"]
 
 {empty} +
 Thread의 상태는 총 6가지로구분될 수 잇으며, 개별 상태로 여러가지 경로가 만들어지 수 있다.
 
-[cols="1,4"]
+[frame=ends, cols="1,4"]
 |===
 ^s|상태
 ^s|설명

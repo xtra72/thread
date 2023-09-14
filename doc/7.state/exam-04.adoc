@@ -4,6 +4,8 @@
 
 {empty} + 
 
+=== 과정
+
 1. Thread class를 이용해 1초에 1씩 증가하여 10까지 증가하는 counter object 생성한다.
 +
 [source,java]
@@ -34,30 +36,31 @@ include::{sourcedir}/Exam04.java[lines=12..20,indent=0]
 +
 5. 결과는 다음과 같다.
 +
+====
 [source,console]
 ----
 RUNNABLE
 WAITING
 TERMINATED
 ----
+====
 +
 
 {empty} +
 
 === Source Code
 
-* WaitingCounter.java
-+
+==== class WaitingCounter
+
 [source,java]
 ----
 include::{sourcedir}/WaitingCounter.java[]
 ----
-+
 
-* Exam04.java
-+
+==== class Exam04
+
 [source,java]
 ----
 include::{sourcedir}/Exam04.java[]
 ----
-+
+

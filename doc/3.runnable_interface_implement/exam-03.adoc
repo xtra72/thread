@@ -1,5 +1,9 @@
 == Exam-03. Thread pool을 이용해 RunnableCounter를 실행해 보자.
 
+{empty} +
+
+=== 과정
+
 1. ExecutorService를 이용해 thread pool을 생성한다. 이때, pool의 크기는 1로 한다.
 +
 [source,java,indent=0]
@@ -7,14 +11,14 @@
         ExecutorService pool = Executors.newFixedThreadPool(1);
 ----
 +
-2. pool에 RunnableCounter instance를 생성해 넘기고 실행하도록 한다.
+2. Thread pool에 RunnableCounter instance를 생성해 넘기고 실행하도록 한다.
 +
 [source,java,indent=0]
 ----
         pool.execute(new RunnableCounter("counter1", 5));
         pool.execute(new RunnableCounter("counter2", 5));
 ----
-3. pool을 종료하도록 명령을 내리고, 종료되길 기다린다.
+3. Thread pool을 종료하도록 명령을 내리고, 종료되길 기다린다.
 +
 [source,console,indent=0]
 ----
@@ -28,6 +32,8 @@
 +
 4. 실행 결과는 아래와 같다.
 +
+--
+====
 [source,console]
 ----
 counter1 : 1
@@ -41,4 +47,6 @@ counter2 : 3
 counter2 : 4
 counter2 : 5
 ----
+====
+--
 +

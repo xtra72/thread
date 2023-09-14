@@ -15,6 +15,6 @@ public class SharedCount {
     }
 
     public static synchronized void increment() {
-        setCount(getCount() + 1);
+        count++;
     }
 }

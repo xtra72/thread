@@ -2,6 +2,8 @@
 
 {empty} +
 
+=== 과정 
+
 1. Quiz-01에서 구현한 RunnableCounter의 instance를 생성한다.
 +
 --
@@ -16,12 +18,9 @@
 --
 [source,java,indent=0]
 ----
-    public static void main(String[] args) {
-        ...
         Thread thread = new Thread(counter);
 
         thread.start();
-    }
 ----
 --
 +
@@ -29,6 +28,8 @@
 +
 --
 image::image/callstack.png[Call Stack]
+
+* Thread[Thread-0] : 
 --
 +
 4. 프로그램이 종료되는 것을 확인한다.
@@ -51,7 +52,11 @@ counter : 5
 * RunnableCounter instance가 여러개 있을때, counter와 thread의 연결 관계는 어떻게 확인할 수 있나?
 * 즉, 특정 RunnableCounter instance가 동작 중인지를 확인하려면? 혹은, 멈추려면?
 
+{empty} +
+
 === Source Code
+
+==== class Exam01
 
 [source,code]
 ----

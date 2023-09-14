@@ -2,16 +2,15 @@
 
 {empty} +
 
-Java 스레드 풀은 여러 개의 스레드를 만들어 두고 만들어 여러 번 재사용되는 작업자 스레드 그룹을 나타낸다.
+Java thread pool은 여러 개의 thread를 만들어 두고 만들어 여러 번 재사용되는 작업자 thread 그룹을 나타낸다.
 
-스레드 풀은 고정 크기로 생성된 스레드 풀에 Runnable 객체를 주고 실행을 요청하면, 스레드 풀에서 스레드를 가져와 실행시킨다.
+Thread pool은 고정 크기로 생성된 thread pool에 Runnable object를 주고 실행을 요청하면, thread pool에서 thread를 가져와 실행시킨다.
 
-만약 스레드 풀에 남아 있는 스레드가 없다면, 유휴 스레드가 생길 때까지 해당 작업은 실행되지 못하고 대기상태에 있게 된다.
+만약 thread pool에 남아 있는 thread가 없다면, 유휴 thread가 생길 때까지 해당 작업은 실행되지 못하고 대기상태에 있게 된다.
 
-실행 중이던 스레드는 작업이 완료되면 다시 스레드 풀로 돌아오게 되고, 대기 중인 작업이 있는 경우 다시 실행하게 된다.
+실행 중이던 thread는 작업이 완료되면 다시 thread pool로 돌아오게 되고, 대기 중인 작업이 있는 경우 다시 실행하게 된다.
 
-.Thread Pool
-image::image/thread_pool.png[align=center]
+image::image/thread_pool.png[title="Thread Pool", align=center]
 
 {empty} + 
 
@@ -25,7 +24,7 @@ link:exam-02.adoc[Exam-02. Thread pool를 이용해 한정된 자원에서 많�
 
 === Thread Pool의 장점
 
-* 스레드 생성과 삭제에 따른 시간과 resource를 절약할 수 있다.
+* Thread 생성과 삭제에 따른 시간과 resource를 절약할 수 있다.
 
 {empty} + 
 
@@ -33,7 +32,7 @@ link:exam-02.adoc[Exam-02. Thread pool를 이용해 한정된 자원에서 많�
 
 **Deadlock**
 
-* multi-thread와 관련된 모든 프로그램에서 교착 상태가 발생할 수 있다.
+* Multi-thread와 관련된 모든 프로그램에서 교착 상태가 발생할 수 있다.
 * 작업 간 데이터 교환이 필요한 경우, 실행 작업과 대기 작업의 교착 상태가 발생할 수 있다.
 
 **Thread Leakage**
@@ -42,7 +41,7 @@ link:exam-02.adoc[Exam-02. Thread pool를 이용해 한정된 자원에서 많�
 
 **Resource Thrashing**
 
-* 지나치게 큰 스레드 풀을 사용할 경우, 스레드 간 context 전환 시 느려지는 문제가 발생할 수 있다.
+* 지나치게 큰 thread pool을 사용할 경우, thread 간 context 전환 시 느려지는 문제가 발생할 수 있다.
 
 {empty} +
 
@@ -54,10 +53,3 @@ link:exam-02.adoc[Exam-02. Thread pool를 이용해 한정된 자원에서 많�
 
 link:exam-03.adoc[Exam-03. 2개의 thread로 thread group을 만들고, 일괄 제어해 보자.]
 {empty} +
-
-
-
-
-[source,java]
-----
-----

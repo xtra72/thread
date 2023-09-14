@@ -30,7 +30,7 @@ link:exam-01.adoc[Exam-01. Linux 명령어를 이용해 시스템에서 동작 �
 
 === Process와 Thread의 차이
 
-[cols="1,1"]
+[frame=ends, cols="1,1"]
 |===
 ^s| Process
 ^s| Thread

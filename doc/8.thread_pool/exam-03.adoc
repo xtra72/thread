@@ -4,6 +4,8 @@
 
 {empty} + 
 
+=== 과정
+
 1. 일괄 제어를 위한 ThreadGroup object를 생성한다.
 +
 [source,java]
@@ -38,7 +40,7 @@ include::{sourcedir}/Exam03.java[lines=13..14,indent=0]
 
 === Source Code
 
-==== Exam03.java
+==== class Exam03
 
 [source,java]
 ----
